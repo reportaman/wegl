@@ -247,7 +247,6 @@ func (c *openWeatherConfig) Fetch(location string, numdays int) iface.Data {
 	}
 	ret.Current, err = c.parseCond(resp.List[0])
 	ret.Location = fmt.Sprintf("%s, %s", resp.City.Name, resp.City.Country)
-//	fmt.Println("Hello world")
 	fmt.Println(ret.Current)
 	if err != nil {
 		log.Fatalf("Failed to fetch weather data: %v\n", err)
