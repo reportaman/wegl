@@ -2,7 +2,7 @@
 *.o
 *.a
 *.so
-/wego
+/wegl
 
 # Folders
 _obj
